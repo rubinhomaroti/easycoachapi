@@ -1,0 +1,9 @@
+CREATE TABLE tb_session (
+id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+scheduled_date_time DATETIME NOT NULL DEFAULT now(),
+session_number DOUBLE NOT NULL DEFAULT 1,
+title VARCHAR(64) NULL,
+description VARCHAR(255) NULL,
+invite_url VARCHAR(255) NULL,
+has_cancellation_fee BOOLEAN NOT NULL DEFAULT FALSE
+);
