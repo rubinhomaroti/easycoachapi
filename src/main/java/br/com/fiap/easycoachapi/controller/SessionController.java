@@ -4,6 +4,7 @@ import br.com.fiap.easycoachapi.dto.SessionDTO;
 import br.com.fiap.easycoachapi.dto.UpdateSessionDTO;
 import br.com.fiap.easycoachapi.service.SessionService;
 import org.springframework.http.HttpStatus;
+import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;

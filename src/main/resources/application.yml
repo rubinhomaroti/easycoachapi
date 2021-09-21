@@ -11,4 +11,7 @@ spring:
     password: admin
     url: jdbc:mysql://localhost:3306/easycoachdb
 
+jwt:
+  secret: 5uRf1B1Rd
+  expire: 1440
 
