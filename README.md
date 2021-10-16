@@ -11,4 +11,5 @@ http://localhost:8099/swagger-ui/
 3. Criar banco "easycoachdb" `CREATE DATABASE easycoachdb;`
 
 ### Autenticação
-Foi utilizado o método de Bearer token, portanto deve-se adicionar no headers da requisicão o parâmetro: `Authentication: Bearer <token>`
+- Foi utilizado o método de Bearer token, portanto deve-se adicionar no headers da requisicão o parâmetro: `Authentication: Bearer <token>` 
+- Usuário e senha padrão "admin"
