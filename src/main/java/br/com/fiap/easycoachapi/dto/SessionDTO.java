@@ -5,6 +5,7 @@ import br.com.fiap.easycoachapi.entity.Session;
 import java.time.LocalDateTime;
 
 public class SessionDTO {
+    private Integer id;
     private LocalDateTime scheduledDateTime;
     private Double sessionNumber;
     private String title;
@@ -15,6 +16,7 @@ public class SessionDTO {
     public SessionDTO() {}
 
     public SessionDTO(Session session){
+        id = session.getId();
         scheduledDateTime = session.getScheduledDateTime();
         sessionNumber = session.getSessionNumber();
         title = session.getTitle();
@@ -22,6 +24,10 @@ public class SessionDTO {
         inviteUrl = session.getInviteUrl();
         hasCancellationFee = session.getHasCancellationFee();
     }
+
+    public Integer getId() { return id; }
+
+    public void setId(Integer id) { this.id = id; }
 
     public LocalDateTime getScheduledDateTime() {
         return scheduledDateTime;
